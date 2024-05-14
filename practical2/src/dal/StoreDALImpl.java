@@ -58,7 +58,7 @@ public class StoreDALImpl implements StoreDAL {
 		// TODO Auto-generated method stub // TODO Auto-generated method stub
 		int oid = 0;
 		try {
-			query = "Insert into os_orders(ototal,cid,dcpn_id) values(?,?,?) returning oid";
+			query = "Insert into os_orders1(ototal,cid,dcpn_id) values(?,?,?) returning oid";
 			st = con.prepareStatement(query);
 			st.setInt(1, total);
 			st.setInt(2, cid);
